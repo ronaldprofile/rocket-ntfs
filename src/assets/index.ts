@@ -14,6 +14,7 @@ import gallery7 from "./gallery/galeria-7.png";
 import gallery8 from "./gallery/galeria-8.png";
 
 import backgroundWaves from "./background.png";
+import banner2 from "./banner.png";
 
 export {
   logo,
@@ -28,5 +29,6 @@ export {
   gallery6,
   gallery7,
   gallery8,
-  backgroundWaves
+  backgroundWaves,
+  banner2
 };
