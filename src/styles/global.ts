@@ -14,7 +14,8 @@ export const globalStyles = globalCss({
 
   body: {
     background: "$bodyBackground",
-    color: "$textColor"
+    color: "$textColor",
+    overflowX: "hidden"
   },
 
   ".wrapper": {
