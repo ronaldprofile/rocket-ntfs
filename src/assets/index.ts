@@ -16,6 +16,13 @@ import gallery8 from "./gallery/galeria-8.png";
 import backgroundWaves from "./background.png";
 import banner2 from "./banner.png";
 
+import astronaut1 from "./astronauts/astronauta-1.png";
+import astronaut2 from "./astronauts/astronauta-2.png";
+import astronaut3 from "./astronauts/astronauta-3.png";
+import astronaut4 from "./astronauts/astronauta-4.png";
+
+import arrowWhite from "./arrow-white.svg";
+
 export {
   logo,
   logoMetaMask,
@@ -30,5 +37,10 @@ export {
   gallery7,
   gallery8,
   backgroundWaves,
-  banner2
+  banner2,
+  astronaut1,
+  astronaut2,
+  astronaut3,
+  astronaut4,
+  arrowWhite
 };
