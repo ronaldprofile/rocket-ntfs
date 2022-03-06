@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Gallery } from "../Gallery";
 import { badge, groupArtists } from "../../assets";
 import * as S from "./styles";
@@ -29,7 +30,22 @@ export function Main() {
             <strong> NFTs</strong>
           </h1>
 
-          <img src={badge} alt="badge Rocket" />
+          <motion.div>
+            <motion.img
+              src={badge}
+              alt="Badge Rocket NFTs"
+              style={{
+                width: 200,
+                height: 200
+              }}
+              animate={{ rotate: 360 }}
+              transition={{
+                ease: "linear",
+                duration: 6,
+                repeat: Infinity
+              }}
+            />
+          </motion.div>
         </div>
       </S.SectionIntro>
 
