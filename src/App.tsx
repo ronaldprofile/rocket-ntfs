@@ -2,6 +2,7 @@ import { BackgroundWaves } from "./components/BackgroundWaves";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
 import { SectionAboutNFTS } from "./components/SectionAboutNFTS";
+import { SectionArtists } from "./components/SectionArtists";
 import { SectionPopularWeek } from "./components/SectionPopularWeek";
 import { globalStyles } from "./styles/global";
 
@@ -16,6 +17,7 @@ export function App() {
 
       <SectionAboutNFTS />
       <SectionPopularWeek />
+      <SectionArtists />
     </>
   );
 }
