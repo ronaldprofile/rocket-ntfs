@@ -2,6 +2,7 @@ import { styled } from "../../styles";
 
 export const Container = styled("section", {
   ".wrapper": {
+    padding: "0 0 148px",
     textAlign: "center",
 
     h2: {
