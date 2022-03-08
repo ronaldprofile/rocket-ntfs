@@ -1,4 +1,4 @@
-import { globalCss } from ".";
+import { globalCss, styled } from ".";
 
 export const globalStyles = globalCss({
   "*": {
@@ -10,6 +10,10 @@ export const globalStyles = globalCss({
 
   "html, body, #root": {
     height: "100vh"
+  },
+
+  html: {
+    scrollBehavior: "smooth"
   },
 
   body: {
@@ -33,5 +37,29 @@ export const globalStyles = globalCss({
 
   li: {
     listStyle: "none"
+  }
+});
+
+export const LinkAnimated = styled("a", {
+  position: "relative",
+
+  "&::before": {
+    content: "",
+    position: "absolute",
+    bottom: -5,
+    right: 0,
+    width: 0,
+    height: 2,
+
+    background: "$colorLogo",
+    transition: "width .6s cubic-bezier(.25,1,.5,1)"
+  },
+
+  "&:hover": {
+    "&::before": {
+      width: "100%",
+      left: 0,
+      right: 0
+    }
   }
 });
