@@ -23,6 +23,7 @@ import astronaut4 from "./astronauts/astronauta-4.png";
 
 import arrowWhite from "./arrow-white.svg";
 import arrowOrange from "./arrow-orange.svg";
+import arrowBlack from "./arrow-black.svg";
 
 import artist1 from "./artists/artista-1.png";
 import artist2 from "./artists/artista-2.png";
@@ -30,6 +31,11 @@ import artist3 from "./artists/artista-3.png";
 import artist4 from "./artists/artista-4.png";
 import artist5 from "./artists/artista-5.png";
 import artist6 from "./artists/artista-6.png";
+
+import instagramIcon from "./instagram.svg";
+import youtubeIcon from "./youtube.svg";
+import emailIcon from "./email.svg";
+import twitterIcon from "./twitter.svg";
 
 export {
   logo,
@@ -52,6 +58,11 @@ export {
   astronaut4,
   arrowWhite,
   arrowOrange,
+  arrowBlack,
+  instagramIcon,
+  twitterIcon,
+  youtubeIcon,
+  emailIcon,
   artist1,
   artist2,
   artist3,
