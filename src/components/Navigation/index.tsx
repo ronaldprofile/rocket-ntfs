@@ -1,3 +1,4 @@
+import { LinkAnimated } from "../../styles/global";
 import { Container } from "./styles";
 
 export function Navigation() {
@@ -5,13 +6,13 @@ export function Navigation() {
     <Container>
       <ul>
         <li>
-          <a href="#">Comprar NFT</a>
+          <LinkAnimated href="#">Comprar NFT</LinkAnimated>
         </li>
         <li>
-          <a href="#">Sobre</a>
+          <LinkAnimated href="#">Sobre</LinkAnimated>
         </li>
         <li>
-          <a href="#">FAQ</a>
+          <LinkAnimated href="#">FAQ</LinkAnimated>
         </li>
       </ul>
     </Container>
