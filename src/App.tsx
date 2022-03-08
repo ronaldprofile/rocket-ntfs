@@ -1,4 +1,5 @@
 import { BackgroundWaves } from "./components/BackgroundWaves";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
 import { SectionAboutNFTS } from "./components/SectionAboutNFTS";
@@ -18,6 +19,8 @@ export function App() {
       <SectionAboutNFTS />
       <SectionPopularWeek />
       <SectionArtists />
+
+      <Footer />
     </>
   );
 }
