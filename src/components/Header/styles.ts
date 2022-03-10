@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import { styled } from "../../styles";
 
-export const Container = styled("header", {
+export const Container = styled(motion.header, {
   height: 50,
   padding: "60px 0 90px",
 
@@ -13,7 +14,7 @@ export const Container = styled("header", {
 
 export const Logo = styled("a");
 
-export const Button = styled("button", {
+export const Button = styled(motion.button, {
   height: 50,
   padding: "15px 14px",
   display: "flex",
@@ -27,10 +28,6 @@ export const Button = styled("button", {
   fontWeight: "bold",
   cursor: "pointer",
 
-  borderRadius: "0.25rem",
-  transition: ".2s",
-
-  "&:hover": {
-    filter: "brightness(0.9)"
-  }
+  border: 0,
+  borderRadius: "0.25rem"
 });

@@ -4,7 +4,10 @@ import { Button, Container, Logo } from "./styles";
 
 export function Header() {
   return (
-    <Container>
+    <Container
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+    >
       <div className="wrapper">
         <Logo href="#" title="Logo Rocket NFTs">
           <img src={I.logo} alt="Logo Rocket NFTs" />
@@ -12,7 +15,17 @@ export function Header() {
 
         <Navigation />
 
-        <Button as="a">
+        <Button
+          whileHover={{
+            scale: 1.05,
+            background: "transparent",
+            color: "#fff",
+            border: "1px solid #fff"
+          }}
+          whileTap={{ scale: 0.95 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 1 } }}
+        >
           <img src={I.logoMetaMask} alt="logo Meta Mask" />
           Conectar Carreira
         </Button>
