@@ -18,6 +18,8 @@ Neste desafio você deverá desenvolver uma landing page completa sobre NFTs.
 
 - React JS.
 - Stitches.
+- Radix UI
+- Framer Motion.
 
 ## Próximo Nível
 
