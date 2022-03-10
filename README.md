@@ -19,6 +19,15 @@ Neste desafio você deverá desenvolver uma landing page completa sobre NFTs.
 - React JS.
 - Stitches.
 
+## Próximo Nível
+
+- Responsividade (Coming soon).
+- Animações (Coming soon).
+- Tooltips ✅
+  Um pop-up que exibe informações relacionadas a um elemento quando o elemento recebe o foco do teclado ou o mouse passa sobre ele.
+
+  <img src="https://ik.imagekit.io/gczsuhmv3/rocket-tooltip22_uGHXko1V0s.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646881091027" alt="tooltip"/>
+
 ## ✅ Requisitos
 
 Neste desafio você deverá construir _uma landing page_ completa sobre NFTs. Caso você ainda não tenha feito os cursos do Discover ou queira fazer uma revisão, segue abaixo uma lista dos cursos e documentações que podem te ajudar a resolver este desafio.
