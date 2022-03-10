@@ -1,5 +1,5 @@
+import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import { styled, keyframes } from "../../styles";
-import { TooltipContent, TooltipArrow } from ".";
 import { violet } from "@radix-ui/colors";
 
 const slideUpAndFade = keyframes({
@@ -22,7 +22,7 @@ const slideLeftAndFade = keyframes({
   "100%": { opacity: 1, transform: "translateX(0)" }
 });
 
-export const StyledContent = styled(TooltipContent, {
+export const StyledContent = styled(TooltipPrimitive.Content, {
   borderRadius: 4,
   padding: "10px 15px",
   fontSize: 15,
@@ -45,6 +45,6 @@ export const StyledContent = styled(TooltipContent, {
   }
 });
 
-export const StyledArrow = styled(TooltipArrow, {
+export const StyledArrow = styled(TooltipPrimitive.Arrow, {
   fill: "white"
 });

@@ -4,8 +4,6 @@ import { StyledContent, StyledArrow } from "./styles";
 
 export const TooltipRoot = TooltipPrimitive.Root;
 export const TooltipTrigger = TooltipPrimitive.Trigger;
-export const TooltipContent = TooltipPrimitive.Content;
-export const TooltipArrow = TooltipPrimitive.Arrow;
 
 interface TooltipProps {
   children: ReactNode;
