@@ -14,6 +14,7 @@ export const Container = styled("section", {
 
         img: {
           width: "100%",
+
           objectFit: "cover",
           borderRadius: "0.25rem"
         }
