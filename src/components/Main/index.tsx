@@ -8,7 +8,11 @@ export function Main() {
     <S.Container>
       <S.SectionIntro>
         <div className="wrapper">
-          <div className="box">
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+          >
             <p>
               Mercado digital para colecionáveis em criptos e tokens não
               fungível (NFT). Compre, venda e descubra ativos digitais
@@ -23,12 +27,15 @@ export function Main() {
                 <span> Artistas Selecionados</span>
               </span>
             </div>
-          </div>
+          </motion.div>
 
-          <h1>
+          <motion.h1
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+          >
             Descubra a verdadeira arte digital e colecione diversas
             <strong> NFTs</strong>
-          </h1>
+          </motion.h1>
 
           <motion.div>
             <motion.img
