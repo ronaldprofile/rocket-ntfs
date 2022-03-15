@@ -19,6 +19,12 @@ export const Container = styled("section", {
           borderRadius: "0.25rem"
         }
       }
+    },
+
+    "@breakpoint4": {
+      ul: {
+        justifyContent: "center"
+      }
     }
   }
 });
