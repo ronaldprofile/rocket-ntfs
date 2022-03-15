@@ -1,5 +1,5 @@
-import { arrowWhite } from "../../assets";
-import { Container, Heading } from "./styles";
+import { ArrowTopRightIcon } from "../../styles/icons";
+import * as A from "./styles";
 
 interface AstronautCardProps {
   astronautName: string;
@@ -15,20 +15,20 @@ export function AstronautCard({
   title
 }: AstronautCardProps) {
   return (
-    <Container>
-      <Heading>
-        <div>
+    <A.Container>
+      <A.Heading>
+        <div className="astronaut-title">
           <span>{title}</span>
-          <img src={arrowWhite} alt="arrow white" />
+          <ArrowTopRightIcon />
         </div>
 
-        <div>
+        <div className="astronaut-info">
           <strong>{astronautName}</strong>
           <span>{rkt} RKT</span>
         </div>
-      </Heading>
+      </A.Heading>
 
-      <img src={astronautImage} alt="Astronauta" />
-    </Container>
+      <A.AstronautImage src={astronautImage} alt="Astronauta" />
+    </A.Container>
   );
 }
