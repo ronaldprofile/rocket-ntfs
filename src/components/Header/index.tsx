@@ -1,35 +1,34 @@
-import * as I from "../../assets";
 import { Navigation } from "../Navigation";
-import { Button, Container, Logo } from "./styles";
+import { ButtonCustom } from "../Button";
+import { HamburgerMenuIcon } from "../../styles/icons";
+
+import * as I from "../../assets";
+import * as H from "./styles";
 
 export function Header() {
   return (
-    <Container
+    <H.Container
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
     >
       <div className="wrapper">
-        <Logo href="#" title="Logo Rocket NFTs">
+        <H.Logo href="#" title="Logo Rocket NFTs">
           <img src={I.logo} alt="Logo Rocket NFTs" />
-        </Logo>
+        </H.Logo>
 
         <Navigation />
 
-        <Button
-          whileHover={{
-            scale: 1.05,
-            background: "transparent",
-            color: "#fff",
-            border: "1px solid #fff"
-          }}
-          whileTap={{ scale: 0.95 }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1 } }}
-        >
+        <ButtonCustom>
           <img src={I.logoMetaMask} alt="logo Meta Mask" />
           Conectar Carreira
-        </Button>
+        </ButtonCustom>
+
+        <H.MenuButtons>
+          <button id="menu">
+            <HamburgerMenuIcon />
+          </button>
+        </H.MenuButtons>
       </div>
-    </Container>
+    </H.Container>
   );
 }

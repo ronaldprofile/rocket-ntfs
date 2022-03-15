@@ -8,26 +8,45 @@ export const Container = styled(motion.header, {
   "& .wrapper": {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+
+    "& > button": {
+      height: 50,
+      padding: "15px 14px",
+      gap: 16,
+      fontSize: 12
+    },
+
+    "@breakpoint4": {
+      "& > nav": {
+        display: "none"
+      },
+
+      "& > button": {
+        display: "none"
+      }
+    }
   }
 });
 
 export const Logo = styled("a");
 
-export const Button = styled(motion.button, {
-  height: 50,
-  padding: "15px 14px",
-  display: "flex",
-  alignItems: "center",
-  gap: 16,
+export const MenuButtons = styled("div", {
+  display: "none",
 
-  background: "$textColor",
-  color: "$blackText",
+  button: {
+    background: "none",
+    border: 0,
+    lineHeight: 0,
 
-  fontSize: 16,
-  fontWeight: "bold",
-  cursor: "pointer",
+    svg: {
+      width: 28,
+      height: 28,
+      color: "$textColor"
+    }
+  },
 
-  border: 0,
-  borderRadius: "0.25rem"
+  "@breakpoint4": {
+    display: "block"
+  }
 });
