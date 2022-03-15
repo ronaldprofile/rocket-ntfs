@@ -24,8 +24,9 @@ Neste desafio você deverá desenvolver uma landing page completa sobre NFTs.
 ## Próximo Nível
 
 - Responsividade (Coming soon).
-- Animações (Coming soon).
+- Animações ✅.
 - Tooltips ✅
+  <br />
   Um pop-up que exibe informações relacionadas a um elemento quando o elemento recebe o foco do teclado ou o mouse passa sobre ele.
 
   <img src="https://ik.imagekit.io/gczsuhmv3/rocket-tooltip22_uGHXko1V0s.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646881091027" alt="tooltip"/>
