@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { Gallery } from "../Gallery";
+import { ButtonCustom } from "../Button";
+
+import { ArrowRightIcon } from "../../styles/icons";
 import { badge, groupArtists } from "../../assets";
 import * as S from "./styles";
 
@@ -27,6 +30,13 @@ export function Main() {
                 <span> Artistas Selecionados</span>
               </span>
             </div>
+
+            <ButtonCustom>
+              Conectar carreira
+              <div>
+                <ArrowRightIcon width={28} height={28} />
+              </div>
+            </ButtonCustom>
           </motion.div>
 
           <motion.h1
@@ -37,7 +47,7 @@ export function Main() {
             <strong> NFTs</strong>
           </motion.h1>
 
-          <motion.div>
+          <motion.div id="badge">
             <motion.img
               src={badge}
               alt="Badge Rocket NFTs"
