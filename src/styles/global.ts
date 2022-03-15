@@ -24,7 +24,11 @@ export const globalStyles = globalCss({
 
   ".wrapper": {
     maxWidth: 1277,
-    margin: "0 auto"
+    margin: "0 auto",
+
+    "@breakpoint4": {
+      margin: "0 24px"
+    }
   },
 
   button: {
