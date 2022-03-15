@@ -28,8 +28,6 @@ export function SectionPopularWeek() {
             />
           </S.Column>
 
-          <S.Divider />
-
           <S.Column>
             <AstronautCard
               title="Astronaut 2"
@@ -42,6 +40,22 @@ export function SectionPopularWeek() {
               title="Astronaut 4"
               astronautName="Tamires Santos"
               astronautImage={I.astronaut4}
+              rkt="4.30"
+            />
+          </S.Column>
+
+          <S.Column>
+            <AstronautCard
+              title="Astronaut 2"
+              astronautName="Jakeliny Gracielly"
+              astronautImage={I.astronaut1}
+              rkt="2.0"
+            />
+
+            <AstronautCard
+              title="Astronaut 4"
+              astronautName="Tamires Santos"
+              astronautImage={I.astronaut2}
               rkt="4.30"
             />
           </S.Column>

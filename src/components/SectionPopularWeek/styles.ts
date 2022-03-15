@@ -9,23 +9,33 @@ export const Container = styled("section", {
       strong: {
         color: "$colorLogo"
       }
+    },
+
+    "@breakpoint4": {
+      h2: {
+        fontSize: 30
+      }
     }
   }
 });
 
 export const ContainerAstronauts = styled("div", {
   marginTop: 158,
-  display: "flex",
-  justifyContent: "space-between"
+  display: "grid",
+  gridTemplateColumns: "repeat(3, 1fr)",
+  gap: 32,
+
+  "@breakpoint4": {
+    gridTemplateColumns: "repeat(2, 1fr)"
+  },
+
+  "@breakpoint5": {
+    gridTemplateColumns: "repeat(1, 1fr)"
+  }
 });
 
 export const Column = styled("div", {
   display: "flex",
   flexDirection: "column",
-  gap: 50
-});
-
-export const Divider = styled("div", {
-  width: 1,
-  background: "$subTitleColor"
+  gap: 32
 });
