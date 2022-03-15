@@ -5,7 +5,9 @@ export const Container = styled("div", {
   display: "flex",
   alignItems: "center",
   gap: 40,
-  background: "$cardColor",
+  background: "#121214",
+  border: "1.5px solid #29292e",
+  borderRadius: ".312rem",
 
   "& .user": {
     display: "flex",
@@ -19,5 +21,10 @@ export const Container = styled("div", {
         background: "$colorLogo"
       }
     }
+  },
+
+  "@breakpoint1": {
+    padding: "14px 0",
+    flexDirection: "column"
   }
 });
