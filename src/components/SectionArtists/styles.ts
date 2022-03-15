@@ -20,6 +20,12 @@ export const Container = styled("section", {
       img: {
         marginLeft: 14
       }
+    },
+
+    "@breakpoint4": {
+      h2: {
+        fontSize: 30
+      }
     }
   }
 });
@@ -28,11 +34,15 @@ export const ContainerArtists = styled("div", {
   margin: "120px 0 54px 0",
   display: "grid",
   gridTemplateColumns: "repeat(3, 1fr)",
-  gap: 100
+  gap: 32,
+
+  "@breakpoint4": {
+    gridTemplateColumns: "repeat(1, 1fr)"
+  }
 });
 
 export const Column = styled("div", {
   display: "flex",
   flexDirection: "column",
-  gap: 100
+  gap: 32
 });
