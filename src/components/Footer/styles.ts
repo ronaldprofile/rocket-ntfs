@@ -1,13 +1,13 @@
 import { styled } from "../../styles";
 
 export const Container = styled("footer", {
-  background: "$cardColor"
+  background: "#121214"
 });
 
 export const Brand = styled("div", {
   width: "100%",
   padding: "82px 0 60px",
-  borderBottom: "1px solid $subTitleColor",
+  borderBottom: "1px solid #29292e",
 
   ".wrapper": {
     display: "flex",
@@ -19,23 +19,35 @@ export const Brand = styled("div", {
       alignItems: "center",
       justifyContent: "center",
 
-      width: 80,
-      height: 80,
-      background: "$colorLogo",
+      width: 48,
+      height: 48,
+      background: "#202024",
       transition: ".2s",
+      borderRadius: ".312rem",
+
       "&:hover": {
-        filter: "brightness(0.9)"
+        background: "$colorLogo"
+      },
+
+      svg: {
+        width: 20,
+        height: 20,
+        color: "$textColor"
       }
     }
   }
 });
 
 export const FooterMain = styled("div", {
-  borderBottom: "1px solid $subTitleColor",
+  borderBottom: "1px solid #29292e",
 
   ".wrapper": {
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+
+    "@breakpoint4": {
+      flexDirection: "column"
+    }
   },
 
   nav: {
@@ -43,34 +55,34 @@ export const FooterMain = styled("div", {
 
     display: "flex",
     alignItems: "center",
+    flexWrap: "wrap",
     gap: 128,
 
     ul: {
       span: {
         display: "block",
-        fontSize: 20,
+        fontSize: 16,
         fontWeight: 700,
         marginBottom: 16
       },
 
       li: {
-        fontSize: 20,
-
         "& + li": {
           marginTop: 15
         },
 
         a: {
-          color: "$subTitleColor"
+          color: "$subTitleColor",
+          fontSize: 16
         }
       }
+    },
+
+    "@breakpoint3": {
+      gap: 48,
+      justifyContent: "space-between"
     }
   }
-});
-
-export const Divider = styled("div", {
-  width: 1,
-  background: "$subTitleColor"
 });
 
 export const Newsletter = styled("div", {
@@ -123,7 +135,44 @@ export const Newsletter = styled("div", {
       fontWeight: 700,
       background: "#fff",
       border: 0,
-      borderRadius: "0 .25rem .25rem 0"
+      borderRadius: "0 .25rem .25rem 0",
+
+      "&:disabled": {
+        background: "$colorLogo",
+        color: "#202024",
+        opacity: 0.5,
+        cursor: "not-allowed"
+      }
+    }
+  },
+
+  "@breakpoint3": {
+    h3: {
+      fontSize: 26
+    },
+
+    form: {
+      "input, button": {
+        height: 50,
+        fontSize: 16
+      }
+    }
+  },
+
+  "@breakpoint2": {
+    h3: {
+      fontSize: 26
+    },
+
+    form: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 12,
+
+      "input, button": {
+        width: "100%",
+        borderRadius: ".312rem"
+      }
     }
   }
 });
@@ -138,6 +187,12 @@ export const FooterBottom = styled("div", {
     a: {
       fontSize: 20,
       color: "$subTitleColor"
+    },
+
+    "@breakpoint4": {
+      flexDirection: "column",
+      alignItems: "flex-start",
+      gap: 16
     }
   }
 });
@@ -146,6 +201,37 @@ export const SocialsNetworks = styled("nav", {
   ul: {
     display: "flex",
     alignItems: "center",
-    gap: 50
+    gap: 8,
+
+    li: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      background: "#202024",
+      borderRadius: ".312rem",
+      transition: "all .3s ease",
+
+      "&:hover": {
+        background: "$colorLogo",
+        a: {
+          svg: {
+            path: {
+              fill: "$textColor"
+            }
+          }
+        }
+      },
+
+      a: {
+        width: "100%",
+        padding: 8,
+
+        svg: {
+          width: 28,
+          height: 28,
+          color: "$colorLogo"
+        }
+      }
+    }
   }
 });

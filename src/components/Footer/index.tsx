@@ -1,6 +1,14 @@
 import { useCallback } from "react";
 import { Tooltip } from "../Tooltip";
 import { LinkAnimated } from "../../styles/global";
+
+import {
+  ArrowUpIcon,
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon
+} from "../../styles/icons";
 import * as I from "../../assets";
 import * as F from "./styles";
 
@@ -20,7 +28,7 @@ export function Footer() {
 
           <Tooltip content="Voltar ao topo" side="left">
             <a href="#" onClick={scrollToTop}>
-              <img src={I.arrowBlack} alt="arrow black" />
+              <ArrowUpIcon />
             </a>
           </Tooltip>
         </div>
@@ -47,8 +55,6 @@ export function Footer() {
             </form>
           </F.Newsletter>
 
-          <F.Divider />
-
           <nav>
             <ul>
               <span>Empresa</span>
@@ -65,6 +71,7 @@ export function Footer() {
                 <LinkAnimated href="#">Carreira</LinkAnimated>
               </li>
             </ul>
+
             <ul>
               <span>Mapa</span>
               <li>
@@ -80,6 +87,7 @@ export function Footer() {
                 <LinkAnimated href="#">Contato</LinkAnimated>
               </li>
             </ul>
+
             <ul>
               <span>Links</span>
               <li>
@@ -104,7 +112,7 @@ export function Footer() {
           <LinkAnimated
             href="https://rocketseat.com.br"
             target="_blank"
-            className="link-animated"
+            title="Visitar site da Rocketseat."
           >
             www.rocketseat.com
           </LinkAnimated>
@@ -114,7 +122,7 @@ export function Footer() {
               <Tooltip content="Instagram" side="top">
                 <li>
                   <a href="#">
-                    <img src={I.instagramIcon} alt="Instagram icon" />
+                    <InstagramLogoIcon />
                   </a>
                 </li>
               </Tooltip>
@@ -122,22 +130,22 @@ export function Footer() {
               <Tooltip content="Twitter" side="top">
                 <li>
                   <a href="#">
-                    <img src={I.twitterIcon} alt="twitter icon" />
+                    <TwitterLogoIcon />
                   </a>
                 </li>
               </Tooltip>
-              <Tooltip content="Youtube" side="top">
+              <Tooltip content="Github" side="top">
                 <li>
                   <a href="#">
-                    <img src={I.youtubeIcon} alt="Youtube icon" />
+                    <GitHubLogoIcon />
                   </a>
                 </li>
               </Tooltip>
 
-              <Tooltip content="Email" side="top">
+              <Tooltip content="LinkedIn" side="top">
                 <li>
                   <a href="#">
-                    <img src={I.emailIcon} alt="email icon" />
+                    <LinkedInLogoIcon />
                   </a>
                 </li>
               </Tooltip>
