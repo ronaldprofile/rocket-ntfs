@@ -2,10 +2,6 @@
   <img src="./src/assets/logo.svg" alt="logo Rocket NFTs"> 
 </h1>
 
-# Alerta 🚨
-
-Projeto em desenvolvimento.
-
 ## 💻 Projeto
 
 Neste desafio você deverá desenvolver uma landing page completa sobre NFTs.
@@ -23,7 +19,7 @@ Neste desafio você deverá desenvolver uma landing page completa sobre NFTs.
 
 ## Próximo Nível
 
-- Responsividade (Coming soon).
+- Responsividade ✅.
 - Animações ✅.
 - Tooltips ✅
   <br />
