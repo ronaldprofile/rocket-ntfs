@@ -39,7 +39,7 @@ export function SectionAboutNFTS() {
         <BoxLeft>
           <motion.div
             ref={ref}
-            animate={inView ? "show" : "hidden"}
+            // animate={inView ? "show" : "hidden"}
             variants={variants}
             custom={1}
           >
@@ -48,7 +48,7 @@ export function SectionAboutNFTS() {
           </motion.div>
           <motion.div
             ref={ref}
-            animate={inView ? "show" : "hidden"}
+            // animate={inView ? "show" : "hidden"}
             variants={variants}
             custom={1.5}
           >
@@ -57,7 +57,7 @@ export function SectionAboutNFTS() {
           </motion.div>
           <motion.div
             ref={ref}
-            animate={inView ? "show" : "hidden"}
+            // animate={inView ? "show" : "hidden"}
             variants={variants}
             custom={2}
           >
@@ -71,7 +71,7 @@ export function SectionAboutNFTS() {
         <div>
           <motion.div
             ref={ref}
-            animate={inView ? "show" : "hidden"}
+            // animate={inView ? "show" : "hidden"}
             variants={textVariants}
           >
             <p>
@@ -85,7 +85,7 @@ export function SectionAboutNFTS() {
 
           <motion.div
             ref={ref}
-            animate={inView ? "show" : "hidden"}
+            // animate={inView ? "show" : "hidden"}
             variants={textVariants}
             custom={1}
           >
@@ -105,8 +105,8 @@ export function SectionAboutNFTS() {
           alt="Homem de oculus estiloso"
           ref={ref}
           variants={variants}
-          initial="hidden"
-          animate={inView ? "show" : "hidden"}
+          // initial="hidden"
+          // animate={inView ? "show" : "hidden"}
           custom={3}
         />
       </ContentSection>
